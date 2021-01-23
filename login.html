@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link up time monitor</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="login-registration container">
+        <div>
+            <img src="images/programming.png" alt="" class="img-fluid">
+        </div>
+        <div class="form-container">
+            <div class="tab-toggler">
+                <button class="active">Registration</button>
+                <button>Login</button>
+            </div>
+
+            <div class="show" id="registration-form">
+                <h3 class="form-title" class="my-4">Registration</h3>
+
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <label>I agree to the <a href="#">terms and
+                                conditions</a> </label>
+                    </div>
+                    <button type="submit" class="primary-btn">Registration</button>
+                </form>
+            </div>
+            <div id="login-form">
+                <h3 class="form-title">Login</h3>
+
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <label>I agree to the <a href="#">terms and
+                                conditions</a> </label>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Login </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const tabToggler = document.querySelector('.tab-toggler');
+        tabToggler.addEventListener('click', (e) => {
+            const currentElement = e.target;
+            if (currentElement.tagName === 'BUTTON') {
+                // Button control
+                const previousActiveBtn = document.querySelector('button.active');
+                previousActiveBtn.classList.remove('active')
+                currentElement.classList.add('active')
+                // Form control
+
+                const loginForm = document.getElementById('login-form');
+                const registrationForm = document.getElementById('registration-form');
+                if (currentElement.innerText === 'Login') {
+                    registrationForm.classList.remove('show')
+                    loginForm.classList.add('show')
+                } else {
+                    loginForm.classList.remove('show')
+                    registrationForm.classList.add('show')
+                }
+
+            }
+        })
+    </script>
+</body>
+
+</html>

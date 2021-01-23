@@ -1,0 +1,247 @@
+/* ====== Reset ==== */
+*{
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: #3139E4;
+    text-decoration: none;
+}
+input, select{
+    padding: 15px 25px;
+    border: 1px solid #C2C2C2;
+    border-radius: 4px;
+}
+input:focus{
+    outline-color:  #313ae474;
+}
+button{
+    font-weight: 600;
+    font-size: 15px;
+    color: #696969;
+    cursor: pointer;
+}
+button:focus{
+    outline: 0;
+}
+
+.container{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.primary-btn{
+    background: #3139E4;
+    border-radius: 4px;
+    border: 0;
+    padding: 15px 25px;
+    color: #ffffff;
+
+}
+/* ======== Home Page ============ */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.home-page{
+    background-color:#E5E5E5;
+}
+.home-page .manual{
+    text-align: center;
+    margin-top: 70px;
+}
+.manual .cards{
+    margin-top: 50px;
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.cards .card{
+    padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #000000;
+}
+/* ======== Login/Registration Page */
+.login-registration{
+    height: 100%;
+    display: grid;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.login-registration .tab-toggler{
+    display: grid;
+    background: #F1F1F1;
+    border-radius: 4px;
+    padding: 4px;
+    grid-template-columns: 1fr 1fr;
+}
+.login-registration .tab-toggler button{
+    border-radius: 4px;
+    border: 0;
+    padding: 10px;
+}
+.login-registration .tab-toggler button.active{
+    background: #3139E4;
+    color: #ffffff;
+
+}
+.login-registration .form-title {
+    margin-top: 25px;
+}
+.login-registration #login-form,
+.login-registration #registration-form
+{
+    display: none;
+}
+.login-registration .show{
+    display: block !important;
+}
+.login-registration form{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.login-registration .checkbox{
+    margin: 15px 0;
+}
+
+/* ========== status ======= */
+.status,
+.status .cards{
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.status{
+    gap: 90px;
+}
+
+.status .cards{
+    text-align: center;
+    margin-top: 25px;
+}
+.status .hero{
+    text-align: center;
+}
+.status i{
+    padding: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+i.up-icon{
+    background: #3EC84B;
+}
+i.down-icon{
+    background: #E2232E;
+}
+.pseudo-bg{
+    text-align: center;
+    background-color: #fff;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* ========= Monitoring ========== */
+.monitoring{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    gap: 50px;
+}
+.monitor-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 15px;
+
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.stats .single-chart{
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+.table-container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+/* Progress bar */
+.progress .bar {
+    position: absolute;
+    border: 0.14em solid #307bbb;
+    width: 0.72em;
+    height: 0.72em;
+    clip: rect(0em, 0.5em, 1em, 0em);
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+  
+.fill, .bar:after{
+    transform: rotate(180deg);
+}
+  
+.progress {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #ccc;
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+.progress:after {
+    position: absolute;
+    top: 0.14em;
+    left: 0.14em;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    width: 0.72em;
+    height: 0.72em;
+}
+  
+.progress.p12 .bar {
+    transform: rotate(43.2deg);
+}
+  
+
+  
+
+  
+
