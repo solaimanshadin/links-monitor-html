@@ -246,9 +246,33 @@ thead{
 .progress.p12 .bar {
     transform: rotate(43.2deg);
 }
-  
 
-  
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .manual .cards,
+    .login-registration,
+    .status,.monitoring
+    {
+        grid-template-columns: 1fr;
+    }
+    .pseudo-bg{
+        display: none;
+    }
+    
+   
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .top-players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
 
   
 
