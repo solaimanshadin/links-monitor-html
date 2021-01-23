@@ -1,82 +1,96 @@
 /* ====== Reset ==== */
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-html,
-body{
+
+html, body {
     min-height: 100vh;
     height: 100%;
     font-family: 'Poppins', sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
-a{
+
+a {
     color: #3139E4;
     text-decoration: none;
 }
-input, select{
+
+input, select {
     padding: 15px 25px;
     border: 1px solid #C2C2C2;
     border-radius: 4px;
 }
-input:focus{
-    outline-color:  #313ae474;
+
+input:focus {
+    outline-color: #313ae474;
 }
-button{
+
+button {
     font-weight: 600;
     font-size: 15px;
     color: #696969;
     cursor: pointer;
 }
-button:focus{
+
+button:focus {
     outline: 0;
 }
 
-.container{
+.container {
     width: 1200px;
     max-width: 90%;
     margin: 0 auto;
 }
 
-.primary-btn{
+.primary-btn {
     background: #3139E4;
     border-radius: 4px;
     border: 0;
     padding: 15px 25px;
     color: #ffffff;
-
 }
+
 /* ======== Home Page ============ */
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
 }
-.home-page{
-    background-color:#E5E5E5;
+
+.home-page {
+    background-color: #E5E5E5;
 }
-.home-page .manual{
+
+.home-page .manual {
     text-align: center;
     margin-top: 70px;
 }
-.manual .cards{
+
+.manual .cards {
     margin-top: 50px;
     display: grid;
     gap: 35px;
     grid-template-columns: repeat(3, 1fr);
 }
-.cards .card{
+
+.cards .card {
     padding: 50px;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #000000;
 }
+
 /* ======== Login/Registration Page */
-.login-registration{
+
+.login-registration {
     height: 100%;
     display: grid;
     gap: 100px;
@@ -84,77 +98,87 @@ header{
     align-items: center;
     grid-template-columns: 1fr 1fr;
 }
-.login-registration .tab-toggler{
+
+.login-registration .tab-toggler {
     display: grid;
     background: #F1F1F1;
     border-radius: 4px;
     padding: 4px;
     grid-template-columns: 1fr 1fr;
 }
-.login-registration .tab-toggler button{
+
+.login-registration .tab-toggler button {
     border-radius: 4px;
     border: 0;
     padding: 10px;
 }
-.login-registration .tab-toggler button.active{
+
+.login-registration .tab-toggler button.active {
     background: #3139E4;
     color: #ffffff;
-
 }
+
 .login-registration .form-title {
     margin-top: 25px;
 }
-.login-registration #login-form,
-.login-registration #registration-form
-{
+
+.login-registration #login-form, .login-registration #registration-form {
     display: none;
 }
-.login-registration .show{
+
+.login-registration .show {
     display: block !important;
 }
-.login-registration form{
+
+.login-registration form {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 20px;
     gap: 10px;
 }
 
-.login-registration .checkbox{
+.login-registration .checkbox {
     margin: 15px 0;
 }
 
 /* ========== status ======= */
-.status,
-.status .cards{
+
+.status, .status .cards {
     display: grid;
     gap: 30px;
     align-items: center;
     grid-template-columns: 1fr 1fr;
 }
-.status{
+
+.status {
     gap: 90px;
 }
 
-.status .cards{
+.status .cards {
     text-align: center;
     margin-top: 25px;
 }
-.status .hero{
+
+.status .hero {
     text-align: center;
 }
-.status i{
+
+.status i {
     padding: 25px;
     color: #ffffff;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-i.up-icon{
+
+i.up-icon {
     background: #3EC84B;
 }
-i.down-icon{
+
+i.down-icon {
     background: #E2232E;
 }
-.pseudo-bg{
+
+.pseudo-bg {
     text-align: center;
     background-color: #fff;
     height: 100vh;
@@ -166,47 +190,75 @@ i.down-icon{
 }
 
 /* ========= Monitoring ========== */
-.monitoring{
+
+.monitoring {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 50px;
 }
-.monitor-form{
+
+.monitor-form {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     gap: 15px;
-
 }
-.stats{
+
+.stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
     margin-bottom: 25px;
 }
-.stats .single-chart{
+
+.stats .single-chart {
     display: flex;
     background-color: #fff;
     border-radius: 8px;
     padding: 10px;
 }
-.table-container{
+
+.table-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
 }
-table{
+
+.table-container tbody tr td {
+    padding: 5px 0;
+    text-align: center;
+}
+.table-container thead tr th {
+    padding: 15px;
+}
+table {
     width: 100%;
 }
-thead{
+
+thead {
     background: #F5F6FA;
     border-radius: 13px;
     padding: 15px;
 }
+.edit-btn {
+    background: #3CAC32 !important;
+}
+.btn {
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.text-danger {
+    background: #E2232E;
+}
+
 /* Progress bar */
+
 .progress .bar {
     position: absolute;
     border: 0.14em solid #307bbb;
@@ -216,11 +268,11 @@ thead{
     border-radius: 50%;
     transform: rotate(0deg);
 }
-  
-.fill, .bar:after{
+
+.fill, .bar:after {
     transform: rotate(180deg);
 }
-  
+
 .progress {
     position: relative;
     width: 1em;
@@ -242,11 +294,71 @@ thead{
     width: 0.72em;
     height: 0.72em;
 }
-  
+
 .progress.p12 .bar {
     transform: rotate(43.2deg);
 }
 
+
+/* modal css */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: translateY(10vh);
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    right: 30px;
+    transition: all 200ms;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 auto;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+.edit-btn a {
+    color: #fff;
+}
+.modal-close {
+    color: #000000 !important;
+    float: right;
+    font-size: 25px !important;
+}
 
 
 /* small mobile :320px. */
@@ -272,7 +384,4 @@ thead{
     }
     
 }
-
-
-  
 
