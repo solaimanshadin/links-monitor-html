@@ -167,10 +167,9 @@ i.down-icon{
 
 /* ========= Monitoring ========== */
 .monitoring{
-    margin-top: 70px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    align-items: center;
     gap: 50px;
 }
 .monitor-form{
@@ -198,6 +197,14 @@ i.down-icon{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
+}
+table{
+    width: 100%;
+}
+thead{
+    background: #F5F6FA;
+    border-radius: 13px;
+    padding: 15px;
 }
 /* Progress bar */
 .progress .bar {
